@@ -1,0 +1,50 @@
+{
+    "name": "bvtterfly/cycler",
+    "description": "An easy way to rotate through several values is to use cycler",
+    "keywords": [
+        "bvtterfly",
+        "cycler"
+    ],
+    "homepage": "https://github.com/bvtterfly/cycler",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ari",
+            "email": "thearihdrn@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "pestphp/pest": "^1.20"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bvtterfly\\Cycler\\": "src"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bvtterfly\\Cycler\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
